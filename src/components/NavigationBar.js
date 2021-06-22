@@ -1,8 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import Button from 'react-bootstrap/Button'
-import {Link} from 'react-router-dom'
+import NavLink from './NavLink' //My own link
 
 
 const NavigationBar = () => {
@@ -12,12 +11,10 @@ const NavigationBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link ><Link to = '/'>Home</Link></Nav.Link>
-                <Nav.Link ><Link to = '/about'>About</Link></Nav.Link>
+                <Nav.Link ><NavLink to = '/'>Home</NavLink></Nav.Link>
+                <Nav.Link ><NavLink to = '/about'>About</NavLink></Nav.Link>
                 <NavDropdown title="Reference" id="basic-nav-dropdown">
-                    <NavDropdown.Item><Link to = '/react-reference'>React</Link></NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <NavDropdown.Item><NavLink to = '/react-reference'>React</NavLink></NavDropdown.Item>
                 </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
