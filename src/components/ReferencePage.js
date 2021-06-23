@@ -2,8 +2,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import NavigationSideBar from './NavigationSideBar.js'
 import ReferenceContainer from './ReferenceContainer.js'
-import Container from 'react-bootstrap/Container'
-
 
 const ReferencePage = () => {
     return (

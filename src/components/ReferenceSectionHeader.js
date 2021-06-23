@@ -5,7 +5,7 @@ export const ReferenceSectionHeader = ({children, link}) => {
     }
 
     return (
-        <h2 className = 'text py-3' onClick = {HeaderPressed}>
+        <h2 className = 'text py-3 cursorPointer' onClick = {HeaderPressed}>
             {children}
         </h2>
     )
