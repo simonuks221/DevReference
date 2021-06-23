@@ -9,7 +9,7 @@ import About from './components/About.js'
 import ReferencePage from './components/ReferencePage.js'
 import Container from 'react-bootstrap/Container'
 
-import React, {useState, useContext} from 'react'
+import React, {useState} from 'react'
 
 export const ReferenceContext = React.createContext(undefined);
 
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <ReferenceContext.Provider value = {{references: references, changeCurrentReference: changeCurrentReference, currentReferenceId: currentReference, currentSection: currentSection, changeCurrentSection: changeCurrentSection}}>
+      <ReferenceContext.Provider value = {{references: references, changeCurrentReference: changeCurrentReference, currentReferenceId: currentReference, currentSectionId: currentSection, changeCurrentSection: changeCurrentSection}}>
           <Router>
             <header className="App-header">
               <NavigationBar/>

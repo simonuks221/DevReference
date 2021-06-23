@@ -9,7 +9,7 @@ const NavigationSideBar = () => {
         <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
             >
                 <div className="sidebar-sticky"></div>
-                {context.references.find(ref => ref.id === context.currentReferenceId).referenceSections.map(section => <NavigationSideBarPiece section = {section}/>)}
+                {context.references.find(ref => ref.id === context.currentReferenceId).referenceSections.map(section => <NavigationSideBarPiece section = {section} key = {section.id}/>)}
             </Nav>
     )
 }

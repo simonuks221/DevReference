@@ -20,7 +20,7 @@ const NavigationBar = () => {
                 <Nav.Link ><NavLink to = '/'>Home</NavLink></Nav.Link>
                 <Nav.Link ><NavLink to = '/about'>About</NavLink></Nav.Link>
                 <NavDropdown title="References" id="basic-nav-dropdown">
-                    {context.references.map(ref => <NavigationBarDropDown reference = {ref}/>)}
+                    {context.references.map(ref => <NavigationBarDropDown reference = {ref} key = {ref.id}/>)}
                 </NavDropdown>
                 </Nav>
             </Navbar.Collapse>

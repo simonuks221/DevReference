@@ -6,11 +6,12 @@ import { useContext } from 'react'
 
 const NavigationSideBarPiece = ({section}) => {
     const context = useContext(ReferenceContext)
+    
     const ButtonPressed = () => {
         context.changeCurrentSection(section.id)
     }
     return (
-        <NavDropdown.Item><NavLink onClick = {ButtonPressed()}>{section.sectionTitle}</NavLink></NavDropdown.Item>
+        <NavDropdown.Item onClick = {ButtonPressed}>{section.sectionTitle}</NavDropdown.Item>
     )
 }
 
