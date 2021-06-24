@@ -11,7 +11,7 @@ const NavigationBarDropDown = ({reference}) => {
         context.changeCurrentSection(0)
     }
     return (
-        <NavDropdown.Item onClick = {ButtonPressed()}><NavLink  to = '/reference'>{reference.referenceTitle}</NavLink></NavDropdown.Item>
+        <NavDropdown.Item onClick = {ButtonPressed}><NavLink  to = '/reference'>{reference.referenceTitle}</NavLink></NavDropdown.Item>
     )
 }
 

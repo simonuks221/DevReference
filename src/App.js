@@ -17,6 +17,8 @@ function App() {
 
   const [references, changeReferences] = useState([{id: 0, referenceTitle: 'React', referenceSections: [{id: 0, sectionTitle: 'Getting started', path: 'react-reference/GettingStarted'}, {id: 1, sectionTitle: 'Context API', path: 'react-reference/ContextAPI'}]}, 
 {id: 1, referenceTitle: 'Python', referenceSections: [{id: 0, sectionTitle: 'Py Plot', path: 'python-reference/PyPlot'}]}])
+  const [carouselItems, changeCarouselItems] = useState([{title: 'React reference', description: 'A Javascript framework for reactive webpages', imagePath: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg', clickPath: '/reference', referenceId: '0', sectionId: '0'},
+{title: 'Bootstrap reference', description: 'The most famouse CSS JS library', imagePath: 'https://uxuideveloper.com/wp-content/uploads/2021/02/bootstrap-illustration.png', clickPath: '/reference', referenceId: '1', sectionId: '0'}])
   const [currentReference, changeCurrentReference] = useState(0)
   const [currentSection, changeCurrentSection] = useState(0)
 
@@ -32,7 +34,7 @@ function App() {
                 <Switch>
                   <Route path = '/about'><About/></Route>
                   <Route path = '/reference'><ReferencePage/></Route>
-                  <Route path = '/'><Home/></Route>
+                  <Route path = '/'><Home carouselItems = {carouselItems}/></Route>
                 </Switch>  
               </Container>
             </div>

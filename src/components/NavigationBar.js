@@ -13,7 +13,7 @@ const NavigationBar = () => {
 
     return (
         <Navbar bg="light" expand="lg" className = 'mb-2'>
-            <Navbar.Brand href="#home">Web dev reference</Navbar.Brand>
+            <Navbar.Brand><NavLink to = '/' ><a className = 'brand cursorPointer'>Web dev reference</a></NavLink></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
