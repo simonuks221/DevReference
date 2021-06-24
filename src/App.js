@@ -15,7 +15,8 @@ export const ReferenceContext = React.createContext(undefined);
 
 function App() {
 
-  const [references, changeReferences] = useState([{id: 0, referenceTitle: 'React', referenceSections: [{id: 0, sectionTitle: 'Getting started', path: 'GettingStarted'}, {id: 1, sectionTitle: 'Context API', path: 'ContextAPI'}]}])
+  const [references, changeReferences] = useState([{id: 0, referenceTitle: 'React', referenceSections: [{id: 0, sectionTitle: 'Getting started', path: 'react-reference/GettingStarted'}, {id: 1, sectionTitle: 'Context API', path: 'react-reference/ContextAPI'}]}, 
+{id: 1, referenceTitle: 'Python', referenceSections: [{id: 0, sectionTitle: 'Py Plot', path: 'python-reference/PyPlot'}]}])
   const [currentReference, changeCurrentReference] = useState(0)
   const [currentSection, changeCurrentSection] = useState(0)
 

@@ -11,7 +11,7 @@ const NavigationSideBarPiece = ({section}) => {
         context.changeCurrentSection(section.id)
     }
     return (
-        <NavDropdown.Item onClick = {ButtonPressed}>{section.sectionTitle}</NavDropdown.Item>
+        <NavDropdown.Item onClick = {ButtonPressed} className = {context.currentSectionId === section.id? 'text-primary': 'text-secondary'}>{section.sectionTitle}</NavDropdown.Item>
     )
 }
 

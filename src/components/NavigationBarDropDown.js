@@ -8,9 +8,10 @@ const NavigationBarDropDown = ({reference}) => {
     const context = useContext(ReferenceContext)
     const ButtonPressed = () => {
         context.changeCurrentReference(reference.id)
+        context.changeCurrentSection(0)
     }
     return (
-        <NavDropdown.Item><NavLink onClick = {ButtonPressed()} to = '/reference'>{reference.referenceTitle}</NavLink></NavDropdown.Item>
+        <NavDropdown.Item onClick = {ButtonPressed()}><NavLink  to = '/reference'>{reference.referenceTitle}</NavLink></NavDropdown.Item>
     )
 }
 

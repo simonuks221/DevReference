@@ -6,7 +6,7 @@ import { ReferenceContext } from '../App';
 
 const importView = path =>
   lazy(() =>
-    import(`./react-reference/${path}`).catch(() =>
+    import(`./${path}`).catch(() =>
       console.log('Didnt find')
     )
   );
