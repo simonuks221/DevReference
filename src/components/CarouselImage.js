@@ -7,7 +7,6 @@ const CarouselImage = ({carouselItem}) => {
     const history = useHistory();
 
     const ImagePressed = (e) => {
-        alert('IMAGE PRESSED')
         history.push(carouselItem.clickPath) 
         context.changeCurrentReference(carouselItem.referenceId)
         context.changeCurrentSection(carouselItem.sectionId)
