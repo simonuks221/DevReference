@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,eACI,cAAe,CACf,8BACJ,CAEA,OACI,8BACJ","file":"main.256ba692.chunk.css","sourcesContent":[".cursorPointer {\r\n    cursor: pointer;\r\n    text-decoration: none !important;\r\n}\r\n\r\n.brand{\r\n    color: rgba(0,0,0,.9) !important;\r\n}"]}
