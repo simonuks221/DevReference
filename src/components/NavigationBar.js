@@ -13,12 +13,12 @@ const NavigationBar = () => {
 
     return (
         <Navbar bg="light" expand="lg" className = 'mb-2'>
-            <Navbar.Brand><NavLink to = '/' ><a className = 'brand cursorPointer'>Web dev reference</a></NavLink></Navbar.Brand>
+            <NavLink to = '/' ><a className = 'brand cursorPointer navbar-brand'>Web dev reference</a></NavLink>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link ><NavLink to = '/'>Home</NavLink></Nav.Link>
-                <Nav.Link ><NavLink to = '/about'>About</NavLink></Nav.Link>
+                <NavLink to = '/'>Home</NavLink>
+                <NavLink to = '/about'>About</NavLink>
                 <NavDropdown title="References" id="basic-nav-dropdown">
                     {context.references.map(ref => <NavigationBarDropDown reference = {ref} key = {ref.id}/>)}
                 </NavDropdown>

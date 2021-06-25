@@ -1,17 +1,18 @@
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import NavLink from './NavLink' //My own link
-
+import {useHistory, useLocation} from "react-router-dom";
 import { ReferenceContext } from '../App'
 import { useContext } from 'react'
 
 const NavigationBarDropDown = ({reference}) => {
     const context = useContext(ReferenceContext)
+    const history = useHistory();
     const ButtonPressed = () => {
+        history.push('/reference')
         context.changeCurrentReference(reference.id)
         context.changeCurrentSection(0)
     }
     return (
-        <NavDropdown.Item onClick = {ButtonPressed}><NavLink  to = '/reference'>{reference.referenceTitle}</NavLink></NavDropdown.Item>
+        <div className = 'dropdown-item cursorPointer' onClick = {ButtonPressed}><NavLink to = '/reference' >{reference.referenceTitle}</NavLink> </div>
     )
 }
 
