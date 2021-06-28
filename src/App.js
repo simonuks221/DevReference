@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <ReferenceContext.Provider value = {{references: references, changeCurrentReference: changeCurrentReference, currentReferenceId: currentReference, currentSectionId: currentSection, changeCurrentSection: changeCurrentSection}}>
-          <Router>
+          <Router basename = {process.env.PUBLIC_URL}>
             <header className="App-header">
               <NavigationBar/>
             </header>
