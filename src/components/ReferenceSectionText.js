@@ -1,7 +1,7 @@
-export const ReferenceSectionText = ({children}) => {
+export const ReferenceSectionText = ({children, className}) => {
     return (
-        <div className = 'text'>
-            <p>{children}</p>
+        <div>
+            <p className = {className}>{children}</p>
         </div>
     )
 }
