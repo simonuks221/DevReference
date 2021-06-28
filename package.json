@@ -15,7 +15,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://simonuks221.github.io/WebDevReference",
+  "homepage": "https://simonuks221.github.io/DevReference/",
   
   "scripts": {
     "predeploy": "npm run build",
