@@ -37,7 +37,7 @@ export default GettingStarted`}
             </RCode>
             <RText>To import bootstrap styles add to App.js: </RText>
             <RCode>
-            {`import \'bootstrap/dist/css/bootstrap.min.css\'`}
+            {`import 'bootstrap/dist/css/bootstrap.min.css'`}
             </RCode>
         </div>
     )
