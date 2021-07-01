@@ -13,21 +13,6 @@ const CarouselImage = ({carouselItem}) => {
         context.changeCurrentSection(carouselItem.sectionId)
     }
 
-    /*
-    return (
-        <div className = 'ratio ratio-16x9'>
-            <img
-                    style = {{height: '25rem'}}
-                    className="d-block w-100"
-                    src= {carouselItem.imagePath}
-                    alt="Slide"
-                    onClick = {ImagePressed}
-                        
-            />
-        </div>
-    )
-    */
-
     return (
         <div style={{ width: '90%', height: 'auto'}} className = 'mx-auto'>
             <ResponsiveEmbed aspectRatio="21by9">

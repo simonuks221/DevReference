@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './animation.css'
 import NavigationBar from './components/NavigationBar.js'
 import {BrowserRouter as Router,
   Switch,
