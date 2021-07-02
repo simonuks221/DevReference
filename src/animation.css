@@ -1,7 +1,6 @@
 .about div{
     transition: 0.3s;
     animation: initialSlideIn 1s ease backwards 0s;
-
 }
 .about div:nth-child(1){
     animation-delay: 0s;
@@ -21,7 +20,6 @@
 .about div:nth-child(6){
     animation-delay: 0.5s;
 }
-
 
 @keyframes initialSlideIn{
     from{
