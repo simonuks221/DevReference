@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import {useState} from 'react'
+//<Button className = {show} variant = 'outline-info' size = 'sm' onClick={() => {navigator.clipboard.writeText(children)}}>Copy</Button>
 
 
 export const ReferenceCodeSnippet = ({children}) => {
@@ -11,9 +12,9 @@ export const ReferenceCodeSnippet = ({children}) => {
 
     
     return (
-        <div className = 'bg-dark rounded pt-3 pb-3 mb-4' onMouseEnter = {e => {
-            setShow('visible')
-        }} onMouseLeave = {e => {setShow('invisible')}}>
+        <div className = 'bg-dark rounded pt-3 pb-3 mb-4 codeSnippet' onMouseEnter = {e => {
+            setShow('visible codeCopy')
+        }} onMouseLeave = {e => {setShow('invisible codeCopy')}}>
             
             <Row>
                 <Col md = {11}>
@@ -23,8 +24,8 @@ export const ReferenceCodeSnippet = ({children}) => {
                         </code>
                     </pre>
                 </Col>
-                <Col md = {1}>
-                    <Button className = {show} variant = 'outline-info' size = 'sm' onClick={() => {navigator.clipboard.writeText(children)}}>Copy</Button>
+                <Col md = {1} >
+                    <Button id = 'copyButton' variant = 'outline-info' size = 'sm' onClick={() => {navigator.clipboard.writeText(children)}}>Copy</Button>
                 </Col>
             </Row>
         </div>

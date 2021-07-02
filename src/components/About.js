@@ -13,7 +13,7 @@ const About = () => {
                     <ListGroup.Item className = 'bg-secondary '>Automatic reference and section data rendering</ListGroup.Item>
                     <ListGroup.Item className = 'bg-secondary '>Responsive design for all device sizes</ListGroup.Item>
                     <ListGroup.Item className = 'bg-secondary '>Carousel design in Home page</ListGroup.Item>
-                    <ListGroup.Item className = 'bg-secondary '>Different CSS powered animation</ListGroup.Item>
+                    <ListGroup.Item className = 'bg-secondary '>Different CSS powered animations</ListGroup.Item>
                 </ListGroup>
             </Container>
     )
