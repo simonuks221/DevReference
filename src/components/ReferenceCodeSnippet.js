@@ -3,19 +3,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import {useState} from 'react'
-//<Button className = {show} variant = 'outline-info' size = 'sm' onClick={() => {navigator.clipboard.writeText(children)}}>Copy</Button>
-
 
 export const ReferenceCodeSnippet = ({children}) => {
-    
-    const [show, setShow] = useState('invisible')
 
-    
     return (
-        <div className = 'bg-dark rounded pt-3 pb-3 mb-4 codeSnippet' onMouseEnter = {e => {
-            setShow('visible codeCopy')
-        }} onMouseLeave = {e => {setShow('invisible codeCopy')}}>
-            
+        <div className = 'bg-dark rounded pt-3 pb-3 mb-4 codeSnippet'>
             <Row>
                 <Col md = {11}>
                     <pre className = 'px-3 mt-1 mb-0'>
