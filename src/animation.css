@@ -1,0 +1,21 @@
+.about div{
+    transition: 0.3s;
+}
+
+.about div:hover{
+    background: yellow;
+    transform: translateX(20px);
+}
+
+.codeSnippet{
+    background: #000;
+}
+
+#copyButton{
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+.codeSnippet:hover #copyButton{
+    opacity: 1;
+}
