@@ -1,3 +1,8 @@
+:root{
+    --triangle1Color: #339EEC;
+    --triangle2Color: #1a4f75;
+}
+
 .about div{
     transition: 0.3s;
     animation: initialSlideIn 1s ease backwards 0s;
@@ -19,6 +24,9 @@
 }
 .about div:nth-child(6){
     animation-delay: 0.5s;
+}
+.about div:nth-child(7){
+    animation-delay: 0.6s;
 }
 
 @keyframes initialSlideIn{
@@ -50,4 +58,31 @@
 
 .codeSnippet:hover #copyButton{
     opacity: 1;
+}
+
+
+.brand svg{
+    cursor: pointer;
+}
+
+#Triangle1{
+    fill: var(--triangle1Color);
+}
+#Triangle2{
+    fill: var(--triangle2Color);
+}
+
+#Triangle1, #Triangle2{
+    transition: all 1s ease;
+}
+
+#Triangle2{
+    transform: translateX(-100%);
+}
+
+.brand:hover #Triangle1{
+    transform: translateX(120%);
+}
+.brand:hover #Triangle2{
+    transform: translateX(0%);
 }

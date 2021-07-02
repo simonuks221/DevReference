@@ -14,6 +14,8 @@ const About = () => {
                     <ListGroup.Item className = 'bg-secondary' animationoffset = '1.0'>Responsive design for all device sizes</ListGroup.Item>
                     <ListGroup.Item className = 'bg-secondary' animationoffset = '1.0'>Carousel design in Home page</ListGroup.Item>
                     <ListGroup.Item className = 'bg-secondary' animationoffset = '1.0'>Different CSS powered animations</ListGroup.Item>
+                    <ListGroup.Item className = 'bg-secondary' animationoffset = '1.0'>SVG format animations</ListGroup.Item>
+
                 </ListGroup>
             </Container>
     )
