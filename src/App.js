@@ -16,9 +16,9 @@ export const ReferenceContext = React.createContext(undefined);
 
 function App() {
 
-  const [references, changeReferences] = useState([{id: 0, referenceTitle: 'React', referenceSections: [{id: 0, sectionTitle: 'Getting started', path: 'react-reference/GettingStarted'}, {id: 1, sectionTitle: 'Context API', path: 'react-reference/ContextAPI'}, {id: 2, sectionTitle: 'Deploying', path: 'react-reference/Deployement'}, {id: 3, sectionTitle: 'Routing', path: 'react-reference/Router'}]}, 
+  const [references] = useState([{id: 0, referenceTitle: 'React', referenceSections: [{id: 0, sectionTitle: 'Getting started', path: 'react-reference/GettingStarted'}, {id: 1, sectionTitle: 'Context API', path: 'react-reference/ContextAPI'}, {id: 2, sectionTitle: 'Deploying', path: 'react-reference/Deployement'}, {id: 3, sectionTitle: 'Routing', path: 'react-reference/Router'}]}, 
 {id: 1, referenceTitle: 'Python', referenceSections: [{id: 0, sectionTitle: 'Py Plot', path: 'python-reference/PyPlot'}]}])
-  const [carouselItems, changeCarouselItems] = useState([{title: 'React reference', description: 'A Javascript framework for reactive webpages', imagePath: 'images/ReactCarousel.jpg', clickPath: '/reference', referenceId: 0, sectionId: 0, id: 0},
+  const [carouselItems] = useState([{title: 'React reference', description: 'A Javascript framework for reactive webpages', imagePath: 'images/ReactCarousel.jpg', clickPath: '/reference', referenceId: 0, sectionId: 0, id: 0},
 {title: 'Bootstrap reference', description: 'The most famous CSS JS library', imagePath: 'images/BootstrapCarousel.jpg', clickPath: '/reference', referenceId: 1, sectionId: 0, id: 1}])
   const [currentReference, changeCurrentReference] = useState(0)
   const [currentSection, changeCurrentSection] = useState(0)

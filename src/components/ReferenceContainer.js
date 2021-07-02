@@ -23,7 +23,7 @@ const ReferenceContainer = () => {
     }
 
     loadView();
-  }, [context.currentSectionId, context.currentReferenceId]);
+  }, [context.currentSectionId, context.currentReferenceId, context.references]);
 
     return (
         <Container fluid className = 'bg-light'>

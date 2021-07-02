@@ -6,3 +6,9 @@
 .brand{
     color: rgba(0,0,0,.9) !important;
 }
+
+.navLinkButton{
+    padding: .5rem 0.75rem;
+    border: none;
+    background: transparent;
+}

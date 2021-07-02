@@ -1,5 +1,5 @@
 import NavLink from './NavLink' //My own link
-import {useHistory, useLocation} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import { ReferenceContext } from '../App'
 import { useContext } from 'react'
 
