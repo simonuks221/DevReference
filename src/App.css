@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .cursorPointer {
     cursor: pointer;
     text-decoration: none !important;
