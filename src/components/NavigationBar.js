@@ -2,6 +2,7 @@
     import Nav from 'react-bootstrap/Nav'
     import NavDropdown from 'react-bootstrap/NavDropdown'
     import NavLink from './NavLink' //My own link
+    import {useLocation} from "react-router-dom";
 
     import {useContext} from 'react'
     import {ReferenceContext} from '../App.js'
@@ -26,8 +27,8 @@
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                    <NavLink to = '/'>Home</NavLink>
-                    <NavLink to = '/about'>About</NavLink>
+                    <NavLink className = {useLocation().pathname === '/'? 'text-primary': 'text-secondary'} to = '/'>Home</NavLink>
+                    <NavLink className = {useLocation().pathname === '/about'? 'text-primary': 'text-secondary'} to = '/about'>About</NavLink>
                     <NavDropdown title="References" id="basic-nav-dropdown">
                         {context.references.map(ref => <NavigationBarDropDown reference = {ref} key = {ref.id}/>)}
                     </NavDropdown>

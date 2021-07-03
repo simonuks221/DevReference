@@ -6,13 +6,14 @@ import { useContext } from 'react'
 const NavigationBarDropDown = ({reference}) => {
     const context = useContext(ReferenceContext)
     const history = useHistory();
+
     const ButtonPressed = () => {
         history.push('/reference')
         context.changeCurrentReference(reference.id)
         context.changeCurrentSection(0)
     }
     return (
-        <div className = 'dropdown-item cursorPointer' onClick = {ButtonPressed}><NavLink to = '/reference' >{reference.referenceTitle}</NavLink> </div>
+        <div className = 'dropdown-item cursorPointer' onClick = {ButtonPressed}><NavLink className = {reference.id === context.currentReferenceId? 'text-primary': 'text-secondary'} to = '/reference' >{reference.referenceTitle}</NavLink> </div>
     )
 }
 

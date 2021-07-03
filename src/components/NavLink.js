@@ -1,9 +1,9 @@
 import {useHistory, useLocation} from "react-router-dom";
 
-const NavLink = ({children, to}) => {
+const NavLink = ({children, to, className}) => {
     const history = useHistory();
     return (
-        <button onClick = {e => { history.push(to)}} className = {`navLinkButton ${useLocation().pathname === to? 'text-primary': 'text-secondary'}`}>
+        <button className = {`navLinkButton ${className}`} onClick = {e => { history.push(to)}}>
             {children}
         </button>
     )
