@@ -10,9 +10,20 @@ const NavDropdown = ({children, title, className}) => {
         
     }
 
+    window.onclick = function(event) {
+        if (!event.target.matches('.navDropdownLinkButton')) {
+          var dropdowns = document.getElementsByClassName("nav-dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            changeShow('0')
+          }
+        }
+      }
+      
+
     return (
         <div className = 'nav-dropdown'>
-            <button className = {`navLinkButton ${className}`} onClick = {buttonPressed}>{title}</button>
+            <button className = {`navDropdownLinkButton navLinkButton ${className}`} onClick = {buttonPressed}>{title}</button>
             <div className = 'nav-dropdown-content bg-light rounded border' style = {{'opacity': `${show}`}}>
                 {children.map(child => {
                     return React.cloneElement(child, {buttonPressed});
