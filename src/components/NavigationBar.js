@@ -1,6 +1,6 @@
     import Navbar from 'react-bootstrap/Navbar'
     import Nav from 'react-bootstrap/Nav'
-    import NavDropdown from 'react-bootstrap/NavDropdown'
+    import NavDropdown from './NavDropdown';
     import NavLink from './NavLink' //My own link
     import {useLocation} from "react-router-dom";
 

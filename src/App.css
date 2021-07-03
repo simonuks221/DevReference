@@ -12,7 +12,16 @@ body{
 }
 
 .navLinkButton{
-    padding: .5rem 0.75rem;
+    padding: 0.75rem 0.75rem;
     border: none;
     background: transparent;
+}
+
+.nav-dropdown-content{
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-dropdown-content NavigationBarDropDown{
+    padding: 2px;
 }
