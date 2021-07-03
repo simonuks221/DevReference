@@ -29,7 +29,7 @@
                     <Nav className="mr-auto">
                     <NavLink className = {useLocation().pathname === '/'? 'text-primary': 'text-secondary'} to = '/'>Home</NavLink>
                     <NavLink className = {useLocation().pathname === '/about'? 'text-primary': 'text-secondary'} to = '/about'>About</NavLink>
-                    <NavDropdown title="References" id="basic-nav-dropdown">
+                    <NavDropdown title="References" className = {useLocation().pathname === '/reference'? 'text-primary': 'text-secondary'}>
                         {context.references.map(ref => <NavigationBarDropDown reference = {ref} key = {ref.id}/>)}
                     </NavDropdown>
                     </Nav>
