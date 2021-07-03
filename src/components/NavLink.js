@@ -1,4 +1,4 @@
-import {useHistory, useLocation} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 const NavLink = ({children, to, className}) => {
     const history = useHistory();

@@ -3,11 +3,10 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 import {ReactComponent as GitHubLogo} from '../github.svg'
 import {ReactComponent as LinkedInLogo} from '../linkedin.svg'
-import { useLayoutEffect, useState, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 
 const About = () => {
     const aboutLinkRef = useRef(null)
-    const [showLinks, changeShowLinks] = useState(false)
     const showLinksOffset = 30;
 
     useLayoutEffect(() => {
@@ -17,14 +16,11 @@ const About = () => {
         const onScroll = () => {
             const scrollPos = window.scrollY + window.innerHeight
             if(aboutLinkPos < scrollPos){
-                changeShowLinks(true)
                 document.documentElement.style.setProperty('--aboutLinksTransform','1');
             }
         }
         window.addEventListener("scroll", onScroll)
-        return () => {window.removeEventListener("scroll", onScroll); document.documentElement.style.setProperty('--aboutLinksTransform','0');
-    }
-
+        return () => {window.removeEventListener("scroll", onScroll); document.documentElement.style.setProperty('--aboutLinksTransform','0');}
     }, [])
 
     return (
