@@ -1,2 +1,0 @@
-(this["webpackJsonpweb-dev-reference"]=this["webpackJsonpweb-dev-reference"]||[]).push([[7],{72:function(e,c,n){"use strict";n.r(c),n.d(c,"ReferenceSectionText",(function(){return t}));var r=n(2),t=function(e){var c=e.children,n=e.className;return Object(r.jsx)("div",{children:Object(r.jsx)("p",{className:n,children:c})})};c.default=t}}]);
-//# sourceMappingURL=7.56f7101d.chunk.js.map
