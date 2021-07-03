@@ -1,5 +1,5 @@
 import NavLink from './NavLink' //My own link
-import {useHistory} from "react-router-dom";
+import {useHistory, useLocation} from "react-router-dom";
 import { ReferenceContext } from '../App'
 import { useContext } from 'react'
 
@@ -13,7 +13,7 @@ const NavigationBarDropDown = ({reference}) => {
         context.changeCurrentSection(0)
     }
     return (
-        <div className = 'dropdown-item cursorPointer' onClick = {ButtonPressed}><NavLink className = {reference.id === context.currentReferenceId? 'text-primary': 'text-secondary'} to = '/reference' >{reference.referenceTitle}</NavLink> </div>
+        <div className = 'dropdown-item cursorPointer' onClick = {ButtonPressed}><NavLink className = {useLocation().pathname === '/reference'? reference.id === context.currentReferenceId? 'text-primary': 'text-secondary': 'text-secondary'} to = '/reference' >{reference.referenceTitle}</NavLink> </div>
     )
 }
 
