@@ -1,6 +1,10 @@
 import Container from 'react-bootstrap/Container'
 import ListGroup from 'react-bootstrap/ListGroup'
 
+import {ReactComponent as GitHubLogo} from '../github.svg'
+import {ReactComponent as LinkedInLogo} from '../linkedin.svg'
+
+
 const About = () => {
     return (
             <Container fluid className = 'bg-secondary rounded py-2 text-center px-5 text-light'>
@@ -15,8 +19,10 @@ const About = () => {
                     <ListGroup.Item className = 'bg-secondary' animationoffset = '1.0'>Carousel design in Home page</ListGroup.Item>
                     <ListGroup.Item className = 'bg-secondary' animationoffset = '1.0'>Different CSS powered animations</ListGroup.Item>
                     <ListGroup.Item className = 'bg-secondary' animationoffset = '1.0'>SVG format animations</ListGroup.Item>
-
                 </ListGroup>
+                <h2 className = 'text-center py-2'>Created by:</h2>
+                <p>Simonas Riauka</p>
+                <GitHubLogo/>
             </Container>
     )
 }
