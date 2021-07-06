@@ -16,7 +16,7 @@ const GettingStarted = () => {
             {`"homepage": "Link to the website adress here",
             
 "scripts": {
-    predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     }`}
             </RCode>

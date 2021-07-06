@@ -18,7 +18,7 @@ const GettingStarted = () => {
             </RCode>
             <RText>To use context in other components import it: </RText>
             <RCode>
-                {`import { ReferenceContext } from pathHere`}
+                {`import { MainContext } from pathHere`}
             </RCode>
             <RText>And assign to a variable: </RText>
             <RCode>
